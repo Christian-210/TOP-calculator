@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TOP Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="calculator-body">
+      <div class="container">
+        <h1>Ultra Calculator 1.0</h1>
+        <div id="display">
+          <div class="alert">
+            <p>Test Error!</p>
+          </div>
+          <h2>0</h2>
+        </div>
+        <div id="keypad">
+          <div class="calculator-btn-container">
+            <div class="num-pad">
+              <ul>
+                <li>0</li>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+                <li>.</li>
+                <button id="clear-btn">Clear</button>
+              </ul>
+            </div>
+
+            <div class="operation-pad">
+              <button id="add-btn" value="add">&#x2b;</button>
+              <button id="subtract-btn" value="subtract">&#x2212;</button>
+              <button id="multiply-btn" value="multiply">&#xd7;</button>
+              <button id="divide-btn" value="divide">&#xf7;</button>
+              <button id="equals-btn">&#x3d;</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>

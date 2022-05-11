@@ -183,7 +183,7 @@ clearBtn.addEventListener("click", (e) => {
 });
 
 document.addEventListener("keyup", (e) => {
-  if ((e.key >= 0 && e.key <= 9) || e.key === ".") {
+  if (e.key >= 0 && e.key <= 9) {
     if (prevEval === "equal") {
       alertMsg.classList.add("show-alert");
       alertMsg.innerHTML = `<p>You must select an operator to continue!</p>`;

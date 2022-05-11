@@ -1,0 +1,154 @@
+body {
+  background: #1f2833;
+  color: #fff;
+  font-family: "Rubik", sans-serif;
+}
+
+.container {
+  max-width: 700px;
+  margin: auto;
+}
+
+h1 {
+  text-align: left;
+  font-size: 3em;
+  font-weight: 300;
+}
+
+h2 {
+  margin: 0;
+  font-weight: 400;
+}
+
+div#display {
+  text-align: right;
+  /* border: 1px solid #000; */
+  padding: 40px 24px;
+  box-sizing: border-box;
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.4);
+  margin-bottom: 8px;
+  font-size: 3em;
+}
+
+.calculator-btn-container {
+  display: flex;
+}
+
+.num-pad {
+  width: 80%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  padding: 16px;
+  margin-right: 16px;
+}
+
+.operation-pad {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.num-pad ul {
+  margin: 0;
+  padding: 0;
+  gap: 8px;
+  height: 100%;
+}
+
+.num-pad ul,
+.operation-pad ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  list-style-type: none;
+}
+
+.num-pad ul li,
+.operation-pad ul li {
+  padding: 1em 2em;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.num-pad ul li {
+  background: rgb(115 191 113);
+  /* background-color: #2776EA; */
+  font-size: 1.4em;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s all ease-in-out;
+}
+
+.num-pad ul li:hover {
+  color: rgb(115 191 113);
+  background: #fff;
+}
+
+.num-pad ul li:nth-child(1) {
+  grid-row-end: 5;
+}
+
+.operation-pad button {
+  background-color: #e84a5f;
+  background-color: #fe755e;
+  border: none;
+  height: 100%;
+  margin-bottom: 8px;
+  padding: 20px;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 2em;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.2s all ease-in-out;
+}
+
+.operation-pad button:hover {
+  background-color: #fff;
+  color: #fe755e;
+}
+
+.btn-clicked {
+  transform: scale(0.5);
+}
+
+button#equals-btn {
+  margin-bottom: 0;
+}
+
+#clear-btn {
+  grid-column: span 1;
+  border-radius: 8px;
+  font-size: 1.2em;
+  border: none;
+  cursor: pointer;
+  font-family: "Rubik", sans-serif;
+  color: #2776ea;
+  transition: 0.2s all ease-in-out;
+}
+
+#clear-btn:hover {
+  background: #2776ea;
+  color: #fff;
+}
+
+.alert {
+  display: none;
+  color: #ff5757;
+  font-size: 0.9rem;
+  font-weight: 200;
+}
+
+.alert p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.show-alert {
+  display: block;
+}
